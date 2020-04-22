@@ -2,4 +2,8 @@ This is repositiry includes a tasks solution from 'Cracking the Coding Interview
 
 ### [Buy the book here](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 
-The chapters scheme will be added later.
+The chapters scheme is
+
+| Chapter |     Name    |
+|---------|-------------|
+|  VII    |     BigO    |
