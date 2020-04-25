@@ -4,6 +4,7 @@ This is repositiry includes a tasks solution from 'Cracking the Coding Interview
 
 The chapters scheme is
 
-| Chapter |     Name    |
-|---------|-------------|
-|  VII    |     BigO    |
+| Chapter |       Name           |
+|---------|----------------------|
+|  VII    |       BigO           |
+|   1     |  Arrays and Strings  |
