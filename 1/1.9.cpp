@@ -3,7 +3,8 @@
 //call to isSubstring (e.g., "waterbottle" is a rotation of "erbottlewat").
 
 //pre-existing method
-bool isSubstring(string str1, string str2){
+bool isSubstring(string str1, string str2)
+{
     ...
 }
 
@@ -11,14 +12,15 @@ bool isSubstring(string str1, string str2){
 //using method isSubstring to check containing already rotated string inside
 //a doubled initial string which contain all possbile variants of rotation.
 //Runtime is O(n^2) * O(isSubstring) approximatly is around O(n^3)
-bool isStringRotate(string str1, string str2){
+bool isStringRotate(string str1, string str2)
+{
 
-string AllPossibleRotations=str1+str1; //it's a combinatorial trick
+    string AllPossibleRotations = str1 + str1; //it's a combinatorial trick
 
-if(isSubstring(str2,AllPossibleRotations)) return true;
+    if (isSubstring(str2, AllPossibleRotations))
+        return true;
 
-return false;
-
+    return false;
 }
 
 //The other way looks like a brute-force -
