@@ -43,5 +43,7 @@ Node *DoPartition(int part_value)
     }
     last_node->next = nullptr;
 
-    return first_node; //aka new header
+    header->next=first_node; //add original header
+
+    return header; //aka new header
 }
