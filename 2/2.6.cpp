@@ -17,13 +17,14 @@ struct Node
     //construstor
 };
 
+//elegant solution for O(N) runtime and O(N/2) space complexity
 bool isPalindrome(Node *header)
 {
 
     Node *fast_iterator = header->next;
     Node *slow_iterator = header->next;
     stack<int> buff;
-    //findind the middle node using trick with double step iterator for O(N)
+    //findind the middle node using trick with double step iterator for O(N/2)
     while (fast_iterator != nullptr && fast_iterator->next != nullptr)
     {
         buff.emplace(slow_iterator->value);
@@ -39,7 +40,7 @@ bool isPalindrome(Node *header)
 
     //LL is 1 2 2 1  <----->
     //buff as stack 1 2 | 2 1
-    while (!buff.empty())
+    while (!buff.empty()) //for O(N/2)
     {
 
         if (buff.top() != slow_iterator->value) //FILO natural revers data structure
