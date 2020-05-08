@@ -9,3 +9,4 @@ The chapters scheme is
 |  VII    |       BigO           |
 |   1     |  Arrays and Strings  |
 |   2     |     Linked Lists     |
+|   3     |   Stacks and Queues  |
