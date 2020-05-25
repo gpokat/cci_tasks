@@ -1,6 +1,11 @@
 //Route Between Nodes: Given a directed graph, design an algorithm to find out whether there is a route between two nodes.
 
 //There is two ways to do it. BFS & DFS approaches.
+//The method is to start with first vertex what we interested, traverse through graph using DFS/BFS and
+//stop if we reached out second interested vertex otherwise return false.
+
+//Runtime is O(Vertexes+Edges) for both of methods.
+//Space complexity is O(Vertexes) at worst case for both of methods - dependent of how traversal does.
 
 typedef vector<vector<bool>> adj_mtx; //symmetric adjacency matrix - graph representation
 
