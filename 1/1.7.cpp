@@ -3,7 +3,7 @@
 
 //In-place method to rotate matrix by 90 degree.
 //Based on backward swaps of elements of input matrix using by recurrent expression according to the square rotation.
-//Runtime complexity lower than O(n+n*log(n)) approximately, space complexity is O(1).
+//Runtime complexity O( (n*n)/4), space complexity is O(1).
 //Could be optimize more by using SSE/AVX
 void RotateMatrixBy90Degree(vector<vector<int>> NxN)
 {
@@ -13,9 +13,9 @@ void RotateMatrixBy90Degree(vector<vector<int>> NxN)
     int Ni = ceil(N / 2);
     int j = 1;
 
-    for (int i = 1; i <= Ni; ++i)
+    for (int i = 1; i <= Ni; ++i) //O(n/2)
     {
-        for (; j <= Nj; j++)
+        for (; j <= Nj; j++) //O(n/2) due to cutted with both ends per first loop cycle
         {
             swap(NxN[i - 1][j - 1], NxN[N - j][i - 1]);
             swap(NxN[N - j][i - 1], NxN[N - i][N - j]);
