@@ -4,7 +4,7 @@
 //fast, elegant and simple!
 //The idea is to generate call stacks for each of character then permute elements dependence of position&number of stack count.
 //The runtime is O(N*N!), space is O(1)
-void GeneratePermutationForUniqueString(string gener_str, int str_size)
+void GeneratePermutationForUniqueString(string& gener_str, int str_size)
 {
     if (str_size == 1)
     { //permutation is generated
@@ -27,7 +27,7 @@ void GeneratePermutationForUniqueString(string gener_str, int str_size)
 }
 
 //simplest way to solve the problem with STL
-void GeneratePermutationForUniqueStringSTL(string gener_str, int str_size)
+void GeneratePermutationForUniqueStringSTL(string& gener_str, int str_size)
 {
     do
     {
