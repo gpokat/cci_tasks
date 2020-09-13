@@ -114,6 +114,7 @@ public:
 
             for (auto child : current_vtx->child) //'depth' visiting child nodes
             {
+                if (!(child->vis))
                 s_dfs.push(child);
             }
         }
