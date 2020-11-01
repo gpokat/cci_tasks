@@ -12,4 +12,6 @@ The chapters scheme is
 |   3     |   Stacks and Queues  |
 |   4     |   Trees and Graphs   |
 |   8     |      Recursion       |
+|   10    | Sorting and Searching|
+
 
