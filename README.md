@@ -13,5 +13,7 @@ The chapters scheme is
 |   4     |   Trees and Graphs   |
 |   8     |      Recursion       |
 |   10    | Sorting and Searching|
+|   16    |       Moderate       |
+
 
 
